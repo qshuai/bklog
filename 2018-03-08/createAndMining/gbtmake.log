@@ -1,0 +1,585 @@
+I0408 14:18:29.388610  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 11648028
+I0408 14:18:40.277534  1708 GbtMaker.cc:171] gbt height: 1224897, prev_hash: 00000000000000323ec81a1d742bf85822fa51572fcba9d0fa0336ebcbffd8ab, coinbase_value: 159381951, bits: 1a044642, mintime: 1523165388, version: 536870912|0x20000000, gbthash: 75c25f0e87eaeebdd1e7d45d6eee15435f7dddeb1e2deac591074196305ffc63
+I0408 14:18:40.421239  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 11648028
+I0408 14:18:50.760066  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 157087376, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 8bfde8b6dbb82f4dcc83d1cba4db34e727b8aa11d427f9ca2c52569837ac977a
+I0408 14:18:50.805004  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 3201060
+I0408 14:19:01.273744  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 157646314, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 5d75b0556852b9161229e48f4b1ec808d974f38a267a408bc4f6241374f5192f
+I0408 14:19:01.343825  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 5351424
+I0408 14:19:12.307149  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 158200833, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 6da5470f210d1f2b5ac9a5a81b4d5dd0e8d63c9843e194b1b61fd12c43b6975f
+I0408 14:19:12.412258  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 7485992
+I0408 14:19:23.535801  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 158594129, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 04e2e9f1eca6e838936114c7435c4257f3742bea745bdda6f107e750c13fc942
+I0408 14:19:23.646706  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 8998520
+I0408 14:19:34.668088  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 159110233, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 9f5325602253e691d33fc20600dfc8cfd16fb85180ba1bf61640f111b37f83e2
+I0408 14:19:34.804780  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 10987084
+I0408 14:19:46.222157  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 159596723, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: cd107528a0c63db7e46704649a1ac1663e4d159de81929ba58743a97b0df5696
+I0408 14:19:46.409198  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 12862096
+I0408 14:19:57.928023  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 159983196, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 508eea2f69bdf7c44e85d56cf86af04bde33f96010305c27f09200e94d8f2cc3
+I0408 14:19:58.135910  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 14352560
+I0408 14:20:09.872813  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 160428459, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 8dc6a38aee351d8c8c7089bc5eb525d07bacca5755051037b919fb8786e7a1a1
+I0408 14:20:10.216331  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 16070428
+I0408 14:20:22.102037  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 160863926, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: f06962fd6223247bceab928b4eb08527fdd902a230ce1e909f8eb80f5ff14ac9
+I0408 14:20:22.456785  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 17750544
+I0408 14:20:34.677577  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 161160175, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 409e22eb98c21228a4ad606e93c91ea01c07d37ae65ac278ef33ace0030b12f5
+I0408 14:20:35.030181  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 18893804
+I0408 14:20:47.128873  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 161537242, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 7ac238a7cc177a289fc39ff35589c4490543618718e9771f54d0251bf3f168f8
+I0408 14:20:47.572906  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 20348752
+I0408 14:21:00.161629  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 161858282, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: b17c18c8c4ea424eed755f05a7e59963ddb346e79ae64a80e0c21468af603289
+I0408 14:21:00.595686  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 21588048
+I0408 14:21:13.209955  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 162117123, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 88aca5f1b5c787982268f5a78beb671a18da2c95d0ef3bf01ec7c2e4e27494f4
+I0408 14:21:13.700529  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 22587248
+I0408 14:21:26.397724  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 162288750, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: f76cd5896157453c53bbec00d2c8fce17e3a2fe2f88ec08c3dd69b765d20cc63
+I0408 14:21:26.899708  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 23249924
+I0408 14:21:39.686084  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 162447969, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 46f93aaf68d43494a580acea02788fdfb3e5245f012f0c6138329f31595c1bc1
+I0408 14:21:40.211349  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 23864524
+I0408 14:21:52.880705  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 162690003, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 2512fa873029d1beea2901ed42564dcd0602aa23f86e93ac76446e7a543ecf77
+I0408 14:21:53.446954  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 24799152
+I0408 14:22:06.138150  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 162764812, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 5e0eb5cc034e4da83ddd5543b27ab18d4f8b1ef8d70af27c37b7ea8777ba66d5
+I0408 14:22:06.679049  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 25088040
+I0408 14:22:19.719466  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 162939037, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: e467cc51720edddcfa67dbf9e7d48da02f9bcf3127e5e18b2c10c8b799165d8a
+I0408 14:22:20.284915  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 25760836
+I0408 14:22:33.322921  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 163118262, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 123ebbb282ea26abc723f022b740022e9faef5b58e111cf40959aaee049af2cb
+I0408 14:22:33.887249  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 26453028
+I0408 14:22:47.479091  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 163421494, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 6c647027ad3419d681be3ccc977c62c847cd00fcd3565956927a3933850fbcfe
+I0408 14:22:48.085510  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 27624420
+I0408 14:23:01.330252  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 163556308, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 1436ad61440ca4d81b7c6353e65f4e06f933fdfbaf6d8a921217762cc8c97eb7
+I0408 14:23:01.935950  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 28145228
+I0408 14:23:15.372941  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 163709529, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 6d0b6d7baf376f09cbd45bac3b08b1ab1308b56ee0c2f70b2fd125e00d4d1a8b
+I0408 14:23:15.987053  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 28737172
+I0408 14:23:29.384907  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 163881549, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: f3d428715361de02294923f1848397e03a617f3b357d7f6b6ee1f45c620f719c
+I0408 14:23:29.917989  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 29401788
+I0408 14:23:43.881992  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 163992166, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: 5f08c5efa037313ef46c8a24026b7b0179a2c423fafc48f442af8a1d2b23d5c9
+I0408 14:23:45.364498  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 29829240
+I0408 14:23:58.955840  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 164091376, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: b03a7fa8016f3d74634435cd05c275d2dfc865e6735bec74327c03cba2cc0a89
+I0408 14:24:00.525410  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 30212672
+I0408 14:24:14.103078  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 164270199, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: c76c4250030aa2cf99707cef429f5a80678a606266bdbeb56b27ddcba962c280
+I0408 14:24:15.604974  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 30903620
+I0408 14:24:29.386209  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 164489442, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: fd1f09df8c854478f443777719c0e8ca3754b52849990cc241e60a3c0544b967
+I0408 14:24:29.996296  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 31750556
+I0408 14:24:42.528131  1708 GbtMaker.cc:171] gbt height: 1224898, prev_hash: 0000000000000236937d2f4261d378292913e1aff2b3e11a6dd4724054aae312, coinbase_value: 164567048, bits: 1a044516, mintime: 1523165869, version: 536870912|0x20000000, gbthash: f8d22a09e57ec88fa75c99ccd29367751aa6f041e99378732324132105f46289
+I0408 14:24:44.896644  1708 GbtMaker.cc:207] sumbit to Kafka, msg len: 32050412
+E0408 14:24:55.628964  1708 Utils.cc:227] server responded with code: 500
+E0408 14:24:55.629166  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:24:55.629196  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:24:57.242528  1708 Utils.cc:227] server responded with code: 500
+E0408 14:24:57.242621  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:24:57.242638  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:24:58.870633  1708 Utils.cc:227] server responded with code: 500
+E0408 14:24:58.870817  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:24:58.870841  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:00.487073  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:00.487421  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:00.487457  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:02.286751  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:02.286927  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:02.286955  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:03.904386  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:03.904728  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:03.904757  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:05.464815  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:05.465312  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:05.465335  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:07.173178  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:07.173370  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:07.173404  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:08.851649  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:08.851792  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:08.851812  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:10.510169  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:10.510341  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:10.510372  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:12.247961  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:12.253252  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:12.253288  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:13.837620  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:13.841344  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:13.841382  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:15.453253  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:15.453421  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:15.453444  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:17.019923  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:17.025205  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:17.025230  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:18.570328  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:18.573216  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:18.573243  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:20.171355  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:20.171519  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:20.171537  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:21.788601  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:21.793293  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:21.793331  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:23.336988  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:23.341239  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:23.341264  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:25.030658  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:25.030807  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:25.030827  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:26.748442  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:26.748605  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:26.748625  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:28.335280  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:28.335444  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:28.335465  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:29.917258  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:29.920605  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:29.920631  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:31.652366  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:31.652595  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:31.652619  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:33.243856  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:33.249236  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:33.249263  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:34.838222  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:34.838649  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:34.838690  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:36.451613  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:36.451922  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:36.451980  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:38.051820  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:38.051905  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:38.051923  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:39.766901  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:39.767011  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:39.767047  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:41.578564  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:41.581229  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:41.581255  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:43.122848  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:43.122977  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:43.122997  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:44.660755  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:44.660902  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:44.660920  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:46.344907  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:46.349313  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:46.349339  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:48.171005  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:48.173274  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:48.173328  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:49.703905  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:49.704103  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:49.704134  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:51.373757  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:51.377235  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:51.377262  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:52.971194  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:52.973232  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:52.973271  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:54.807482  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:54.811121  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:54.811147  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:56.393616  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:56.397277  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:56.397305  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:58.032567  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:58.037201  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:58.037227  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:25:59.658581  1708 Utils.cc:227] server responded with code: 500
+E0408 14:25:59.658684  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:25:59.658711  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:01.231819  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:01.231984  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:01.232003  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:02.851227  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:02.851356  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:02.851374  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:04.534445  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:04.534626  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:04.534651  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:06.273576  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:06.277225  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:06.277256  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:08.033661  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:08.033839  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:08.033865  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:09.750946  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:09.751189  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:09.751217  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:11.382589  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:11.382802  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:11.382823  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:13.075474  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:13.075558  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:13.075577  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:14.652747  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:14.657234  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:14.657275  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:16.288619  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:16.288769  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:16.288787  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:17.937726  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:17.937844  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:17.937871  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:19.905741  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:19.906075  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:19.906096  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:21.519181  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:21.521333  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:21.521375  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:23.123605  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:23.123781  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:23.123801  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:24.823182  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:24.823379  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:24.823410  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:26.452039  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:26.452178  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:26.452198  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:28.022073  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:28.025231  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:28.025264  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:29.564606  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:29.569207  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:29.569231  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:31.153717  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:31.153929  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:31.153964  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:32.760495  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:32.760819  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:32.760856  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:34.327154  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:34.327651  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:34.327675  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:35.976052  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:35.976261  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:35.976300  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:37.694416  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:37.698676  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:37.698704  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:39.327232  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:39.327450  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:39.327471  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:40.972178  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:40.972259  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:40.972275  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:42.514801  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:42.514995  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:42.515018  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:44.122933  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:44.123152  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:44.123188  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:45.735472  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:45.735626  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:45.735646  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:47.294853  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:47.297201  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:47.297225  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:48.915434  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:48.915628  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:48.915653  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:50.820317  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:50.820479  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:50.820510  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:52.462016  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:52.462199  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:52.462224  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:54.123008  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:54.123175  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:54.123195  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:56.105252  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:56.105566  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:56.105587  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:57.717377  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:57.717913  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:57.717939  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:26:59.274577  1708 Utils.cc:227] server responded with code: 500
+E0408 14:26:59.274730  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:26:59.274755  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:00.902482  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:00.902635  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:00.902662  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:02.477349  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:02.477490  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:02.477510  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:04.092026  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:04.092167  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:04.092187  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:05.752004  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:05.752162  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:05.752182  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:07.489157  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:07.489306  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:07.489326  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:09.293756  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:09.293970  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:09.293990  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:11.096765  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:11.096954  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:11.097033  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:12.707952  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:12.708092  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:12.708113  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:14.454510  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:14.454751  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:14.454777  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:16.112835  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:16.113060  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:16.113083  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:17.746839  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:17.747072  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:17.747115  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:19.322907  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:19.323143  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:19.323328  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:21.022145  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:21.022296  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:21.022316  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:22.617316  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:22.619189  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:22.619216  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:24.176028  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:24.176195  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:24.176219  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:25.824677  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:25.824970  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:25.824998  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:27.456399  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:27.456528  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:27.456548  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:29.021368  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:29.021595  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:29.021627  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:30.594454  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:30.594679  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:30.594725  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:32.248284  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:32.248425  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:32.248455  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:33.860493  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:33.860662  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:33.860682  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:35.477468  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:35.477640  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:35.477671  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:37.093441  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:37.093670  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:37.093703  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:38.746805  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:38.746963  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:38.746982  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:40.463788  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:40.463912  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:40.463932  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:42.107288  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:42.107440  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:42.107460  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:43.730391  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:43.730581  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:43.730679  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:45.410225  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:45.410398  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:45.410428  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:46.969794  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:46.969974  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:46.969995  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:48.710896  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:48.711067  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:48.711148  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:50.303683  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:50.303911  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:50.303937  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:52.077497  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:52.077733  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:52.077755  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:53.671761  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:53.671967  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:53.672008  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:55.224426  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:55.224511  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:55.224529  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:56.935535  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:56.935608  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:56.935626  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:27:58.526284  1708 Utils.cc:227] server responded with code: 500
+E0408 14:27:58.526463  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:27:58.526495  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:00.250396  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:00.250548  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:00.250567  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:02.150027  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:02.150171  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:02.150192  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:03.744743  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:03.744901  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:03.744920  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:05.366250  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:05.366448  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:05.366467  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:06.983083  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:06.983163  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:06.983180  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:08.566148  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:08.566334  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:08.566372  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:10.188441  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:10.188597  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:10.188616  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:11.870213  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:11.870362  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:11.870380  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:13.477288  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:13.477447  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:13.477473  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:15.214956  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:15.215332  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:15.215358  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:16.824158  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:16.824385  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:16.824489  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:18.506285  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:18.506440  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:18.506460  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:20.138829  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:20.138998  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:20.139030  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:21.817036  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:21.817226  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:21.817345  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:23.472451  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:23.472600  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:23.472620  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:25.118999  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:25.119158  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:25.119184  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:26.713140  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:26.713227  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:26.713245  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:28.329205  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:28.329385  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:28.329411  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:29.900724  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:29.900851  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:29.900877  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:31.619513  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:31.619662  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:31.619683  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:33.255995  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:33.256089  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:33.256110  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:35.190420  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:35.190551  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:35.190569  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:36.865772  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:36.865964  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:36.865990  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:38.460239  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:38.460394  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:38.460414  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:40.373255  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:40.373461  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:40.373482  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:41.952749  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:41.952877  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:41.952909  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:43.517720  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:43.517879  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:43.517904  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:45.229612  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:45.229805  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:45.229842  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:46.854995  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:46.855731  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:46.855754  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:48.428673  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:48.428889  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:48.428920  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:50.427469  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:50.427662  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:50.427739  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:52.044407  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:52.044654  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:52.044700  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:53.692931  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:53.693111  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:53.693152  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:55.453495  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:55.453655  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:55.453740  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:57.222604  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:57.222782  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:57.222801  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:28:58.876559  1708 Utils.cc:227] server responded with code: 500
+E0408 14:28:58.876739  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:28:58.876770  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:00.512684  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:00.512856  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:00.512879  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:02.176997  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:02.177161  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:02.177198  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:03.943688  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:03.943859  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:03.943881  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:05.577944  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:05.578140  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:05.578164  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:07.207581  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:07.207711  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:07.207732  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:08.807314  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:08.807399  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:08.807415  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:10.372623  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:10.372763  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:10.372783  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:12.049322  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:12.049446  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:12.049466  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:13.929453  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:13.929646  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:13.929666  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:15.488790  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:15.488977  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:15.489003  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:17.270179  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:17.270337  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:17.270357  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:18.847846  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:18.848038  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:18.848068  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:20.559123  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:20.559206  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:20.559222  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:22.160404  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:22.160562  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:22.160583  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:23.750341  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:23.750546  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:23.750572  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:25.319588  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:25.319758  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:25.319777  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:26.940621  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:26.940696  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:26.940712  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:28.557814  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:28.557924  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:28.558051  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:30.228124  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:30.228289  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:30.228310  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:31.827178  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:31.827368  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:31.827397  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:33.454306  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:33.454470  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:33.454491  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:35.225270  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:35.227612  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:35.227634  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:36.975194  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:36.975325  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:36.975345  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:38.666070  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:38.666256  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:38.666280  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:40.218341  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:40.218472  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:40.218490  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:41.822116  1708 Utils.cc:227] server responded with code: 500
+E0408 14:29:41.822237  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:41.822269  1708 GbtMaker.cc:201] get rawgbt failure
+E0408 14:29:47.821979  1708 Utils.cc:221] unable to request data from: http://127.0.0.1:18332, error: Timeout was reached
+E0408 14:29:47.822247  1708 GbtMaker.cc:138] bitcoind rpc failure
+E0408 14:29:47.822273  1708 GbtMaker.cc:201] get rawgbt failure
+I0408 14:29:50.084105  1708 GbtMaker.cc:171] gbt height: 1224899, prev_hash: 000000000000005fd9a80b3803c23178c6fe761d48dd393d4ee1d2ec415f9682, coinbase_value: 156794060, bits: 1a04448f, mintime: 1523165910, version: 536870912|0x20000000, gbthash: 730ca70fd9053248b7229b597780558f465273e9dfc0df58f360da2f672a1542

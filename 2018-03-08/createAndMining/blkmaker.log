@@ -1,0 +1,95 @@
+I0408 14:18:42.070915  2721 BlockMaker.cc:663] submit block to: http://127.0.0.1:18332
+E0408 14:18:47.073230  2721 Utils.cc:221] unable to request data from: http://127.0.0.1:18332, error: Timeout was reached
+E0408 14:18:47.073372  2721 BlockMaker.cc:678] rpc call fail:
+I0408 14:18:47.610436  2721 BlockMaker.cc:673] rpc call success, submit block response: {"result":"duplicate","error":null,"id":"1"}
+I0408 14:18:50.943612  9251 BlockMaker.cc:175] received rawgbt message, len: 3201060
+I0408 14:18:51.008780  9251 BlockMaker.cc:216] insert rawgbt: 8bfde8b6dbb82f4dcc83d1cba4db34e727b8aa11d427f9ca2c52569837ac977a, txs: 4158
+I0408 14:18:51.096460  9252 BlockMaker.cc:707] received StratumJob message, len: 1860
+I0408 14:18:51.096669  9252 BlockMaker.cc:730] StratumJob, jobId: 6541958170296576182, gbtHash: 8bfde8b6dbb82f4dcc83d1cba4db34e727b8aa11d427f9ca2c52569837ac977a
+I0408 14:19:01.595907  9251 BlockMaker.cc:175] received rawgbt message, len: 5351424
+I0408 14:19:01.697368  9251 BlockMaker.cc:216] insert rawgbt: 5d75b0556852b9161229e48f4b1ec808d974f38a267a408bc4f6241374f5192f, txs: 6952
+I0408 14:19:12.796787  9251 BlockMaker.cc:175] received rawgbt message, len: 7485992
+I0408 14:19:12.935431  9251 BlockMaker.cc:216] insert rawgbt: 6da5470f210d1f2b5ac9a5a81b4d5dd0e8d63c9843e194b1b61fd12c43b6975f, txs: 9724
+I0408 14:19:13.043076  9252 BlockMaker.cc:707] received StratumJob message, len: 1924
+I0408 14:19:13.043196  9252 BlockMaker.cc:730] StratumJob, jobId: 6541958259981764367, gbtHash: 6da5470f210d1f2b5ac9a5a81b4d5dd0e8d63c9843e194b1b61fd12c43b6975f
+I0408 14:19:24.091938  9251 BlockMaker.cc:175] received rawgbt message, len: 8998520
+I0408 14:19:24.258954  9251 BlockMaker.cc:216] insert rawgbt: 04e2e9f1eca6e838936114c7435c4257f3742bea745bdda6f107e750c13fc942, txs: 11682
+I0408 14:19:35.267124  9251 BlockMaker.cc:175] received rawgbt message, len: 10987084
+I0408 14:19:35.471002  9251 BlockMaker.cc:216] insert rawgbt: 9f5325602253e691d33fc20600dfc8cfd16fb85180ba1bf61640f111b37f83e2, txs: 14262
+I0408 14:19:35.691298  9252 BlockMaker.cc:707] received StratumJob message, len: 1924
+I0408 14:19:35.691704  9252 BlockMaker.cc:730] StratumJob, jobId: 6541958359599490400, gbtHash: 9f5325602253e691d33fc20600dfc8cfd16fb85180ba1bf61640f111b37f83e2
+I0408 14:19:47.000349  9251 BlockMaker.cc:175] received rawgbt message, len: 12862096
+I0408 14:19:47.253363  9251 BlockMaker.cc:216] insert rawgbt: cd107528a0c63db7e46704649a1ac1663e4d159de81929ba58743a97b0df5696, txs: 16694
+I0408 14:19:58.853296  9251 BlockMaker.cc:175] received rawgbt message, len: 14352560
+I0408 14:19:59.155910  9251 BlockMaker.cc:216] insert rawgbt: 508eea2f69bdf7c44e85d56cf86af04bde33f96010305c27f09200e94d8f2cc3, txs: 18626
+I0408 14:19:59.342281  9252 BlockMaker.cc:707] received StratumJob message, len: 1988
+I0408 14:19:59.342423  9252 BlockMaker.cc:730] StratumJob, jobId: 6541958461357222447, gbtHash: 508eea2f69bdf7c44e85d56cf86af04bde33f96010305c27f09200e94d8f2cc3
+I0408 14:20:10.873314  9251 BlockMaker.cc:175] received rawgbt message, len: 16070428
+I0408 14:20:11.166988  9251 BlockMaker.cc:216] insert rawgbt: 8dc6a38aee351d8c8c7089bc5eb525d07bacca5755051037b919fb8786e7a1a1, txs: 20852
+I0408 14:20:23.217301  9251 BlockMaker.cc:175] received rawgbt message, len: 17750544
+I0408 14:20:23.579856  9251 BlockMaker.cc:216] insert rawgbt: f06962fd6223247bceab928b4eb08527fdd902a230ce1e909f8eb80f5ff14ac9, txs: 23029
+I0408 14:20:23.791340  9252 BlockMaker.cc:707] received StratumJob message, len: 1988
+I0408 14:20:23.791455  9252 BlockMaker.cc:730] StratumJob, jobId: 6541958567118332669, gbtHash: f06962fd6223247bceab928b4eb08527fdd902a230ce1e909f8eb80f5ff14ac9
+I0408 14:20:35.872797  9251 BlockMaker.cc:175] received rawgbt message, len: 18893804
+I0408 14:20:36.228885  9251 BlockMaker.cc:216] insert rawgbt: 409e22eb98c21228a4ad606e93c91ea01c07d37ae65ac278ef33ace0030b12f5, txs: 24510
+I0408 14:20:48.568534  9251 BlockMaker.cc:175] received rawgbt message, len: 20348752
+I0408 14:20:48.970741  9251 BlockMaker.cc:216] insert rawgbt: 7ac238a7cc177a289fc39ff35589c4490543618718e9771f54d0251bf3f168f8, txs: 26395
+I0408 14:20:49.148954  9252 BlockMaker.cc:707] received StratumJob message, len: 1988
+I0408 14:20:49.149091  9252 BlockMaker.cc:730] StratumJob, jobId: 6541958672518625447, gbtHash: 7ac238a7cc177a289fc39ff35589c4490543618718e9771f54d0251bf3f168f8
+I0408 14:21:01.660594  9251 BlockMaker.cc:175] received rawgbt message, len: 21588048
+I0408 14:21:02.055923  9251 BlockMaker.cc:216] insert rawgbt: b17c18c8c4ea424eed755f05a7e59963ddb346e79ae64a80e0c21468af603289, txs: 28000
+I0408 14:21:14.764818  9251 BlockMaker.cc:175] received rawgbt message, len: 22587248
+I0408 14:21:15.192504  9251 BlockMaker.cc:216] insert rawgbt: 88aca5f1b5c787982268f5a78beb671a18da2c95d0ef3bf01ec7c2e4e27494f4, txs: 29294
+I0408 14:21:16.198375  9252 BlockMaker.cc:707] received StratumJob message, len: 1988
+I0408 14:21:16.198514  9252 BlockMaker.cc:730] StratumJob, jobId: 6541958788716209649, gbtHash: 88aca5f1b5c787982268f5a78beb671a18da2c95d0ef3bf01ec7c2e4e27494f4
+I0408 14:21:27.962482  9251 BlockMaker.cc:175] received rawgbt message, len: 23249924
+I0408 14:21:28.387096  9251 BlockMaker.cc:216] insert rawgbt: f76cd5896157453c53bbec00d2c8fce17e3a2fe2f88ec08c3dd69b765d20cc63, txs: 30152
+I0408 14:21:41.281216  9251 BlockMaker.cc:175] received rawgbt message, len: 23864524
+I0408 14:21:41.731240  9251 BlockMaker.cc:216] insert rawgbt: 46f93aaf68d43494a580acea02788fdfb3e5245f012f0c6138329f31595c1bc1, txs: 30948
+I0408 14:21:41.953296  9252 BlockMaker.cc:707] received StratumJob message, len: 1988
+I0408 14:21:41.953439  9252 BlockMaker.cc:730] StratumJob, jobId: 6541958899283081903, gbtHash: 46f93aaf68d43494a580acea02788fdfb3e5245f012f0c6138329f31595c1bc1
+I0408 14:21:56.310863  9251 BlockMaker.cc:175] received rawgbt message, len: 24799152
+I0408 14:21:56.780452  9251 BlockMaker.cc:216] insert rawgbt: 2512fa873029d1beea2901ed42564dcd0602aa23f86e93ac76446e7a543ecf77, txs: 32158
+I0408 14:22:09.345914  9251 BlockMaker.cc:175] received rawgbt message, len: 25088040
+I0408 14:22:09.842954  9251 BlockMaker.cc:216] insert rawgbt: 5e0eb5cc034e4da83ddd5543b27ab18d4f8b1ef8d70af27c37b7ea8777ba66d5, txs: 32532
+I0408 14:22:10.127848  9252 BlockMaker.cc:707] received StratumJob message, len: 1988
+I0408 14:22:10.128012  9252 BlockMaker.cc:730] StratumJob, jobId: 6541959019929449932, gbtHash: 5e0eb5cc034e4da83ddd5543b27ab18d4f8b1ef8d70af27c37b7ea8777ba66d5
+I0408 14:22:22.534561  9251 BlockMaker.cc:175] received rawgbt message, len: 25760836
+I0408 14:22:23.007081  9251 BlockMaker.cc:216] insert rawgbt: e467cc51720edddcfa67dbf9e7d48da02f9bcf3127e5e18b2c10c8b799165d8a, txs: 33403
+I0408 14:22:35.172107  9251 BlockMaker.cc:175] received rawgbt message, len: 26453028
+I0408 14:22:35.667794  9251 BlockMaker.cc:216] insert rawgbt: 123ebbb282ea26abc723f022b740022e9faef5b58e111cf40959aaee049af2cb, txs: 34299
+I0408 14:22:35.993988  9252 BlockMaker.cc:707] received StratumJob message, len: 2052
+I0408 14:22:35.994160  9252 BlockMaker.cc:730] StratumJob, jobId: 6541959130326678450, gbtHash: 123ebbb282ea26abc723f022b740022e9faef5b58e111cf40959aaee049af2cb
+I0408 14:22:49.936444  9251 BlockMaker.cc:175] received rawgbt message, len: 27624420
+I0408 14:22:50.441042  9251 BlockMaker.cc:216] insert rawgbt: 6c647027ad3419d681be3ccc977c62c847cd00fcd3565956927a3933850fbcfe, txs: 35815
+I0408 14:23:03.468880  9251 BlockMaker.cc:175] received rawgbt message, len: 28145228
+I0408 14:23:03.978374  9251 BlockMaker.cc:216] insert rawgbt: 1436ad61440ca4d81b7c6353e65f4e06f933fdfbaf6d8a921217762cc8c97eb7, txs: 36489
+I0408 14:23:04.551854  9252 BlockMaker.cc:707] received StratumJob message, len: 2052
+I0408 14:23:04.552168  9252 BlockMaker.cc:730] StratumJob, jobId: 6541959254913756513, gbtHash: 1436ad61440ca4d81b7c6353e65f4e06f933fdfbaf6d8a921217762cc8c97eb7
+I0408 14:23:17.370990  9251 BlockMaker.cc:175] received rawgbt message, len: 28737172
+I0408 14:23:17.920002  9251 BlockMaker.cc:216] insert rawgbt: 6d0b6d7baf376f09cbd45bac3b08b1ab1308b56ee0c2f70b2fd125e00d4d1a8b, txs: 37255
+I0408 14:23:31.402134  9251 BlockMaker.cc:175] received rawgbt message, len: 29401788
+I0408 14:23:31.997475  9251 BlockMaker.cc:216] insert rawgbt: f3d428715361de02294923f1848397e03a617f3b357d7f6b6ee1f45c620f719c, txs: 38115
+I0408 14:23:32.210489  9252 BlockMaker.cc:707] received StratumJob message, len: 2052
+I0408 14:23:32.210652  9252 BlockMaker.cc:730] StratumJob, jobId: 6541959374629513329, gbtHash: f3d428715361de02294923f1848397e03a617f3b357d7f6b6ee1f45c620f719c
+I0408 14:23:46.899143  9251 BlockMaker.cc:175] received rawgbt message, len: 29829240
+I0408 14:23:47.464756  9251 BlockMaker.cc:216] insert rawgbt: 5f08c5efa037313ef46c8a24026b7b0179a2c423fafc48f442af8a1d2b23d5c9, txs: 38668
+I0408 14:24:02.102119  9251 BlockMaker.cc:175] received rawgbt message, len: 30212672
+I0408 14:24:02.710321  9251 BlockMaker.cc:216] insert rawgbt: b03a7fa8016f3d74634435cd05c275d2dfc865e6735bec74327c03cba2cc0a89, txs: 39164
+I0408 14:24:02.981519  9252 BlockMaker.cc:707] received StratumJob message, len: 2052
+I0408 14:24:02.981719  9252 BlockMaker.cc:730] StratumJob, jobId: 6541959506639355816, gbtHash: b03a7fa8016f3d74634435cd05c275d2dfc865e6735bec74327c03cba2cc0a89
+I0408 14:24:17.153200  9251 BlockMaker.cc:175] received rawgbt message, len: 30903620
+I0408 14:24:17.749363  9251 BlockMaker.cc:216] insert rawgbt: c76c4250030aa2cf99707cef429f5a80678a606266bdbeb56b27ddcba962c280, txs: 40058
+I0408 14:24:32.088526  9251 BlockMaker.cc:175] received rawgbt message, len: 31750556
+I0408 14:24:32.677212  9251 BlockMaker.cc:216] insert rawgbt: fd1f09df8c854478f443777719c0e8ca3754b52849990cc241e60a3c0544b967, txs: 41153
+I0408 14:24:33.154342  9252 BlockMaker.cc:707] received StratumJob message, len: 2052
+I0408 14:24:33.154486  9252 BlockMaker.cc:730] StratumJob, jobId: 6541959636778420703, gbtHash: fd1f09df8c854478f443777719c0e8ca3754b52849990cc241e60a3c0544b967
+I0408 14:24:46.560667  9251 BlockMaker.cc:175] received rawgbt message, len: 32050412
+I0408 14:24:47.187363  9251 BlockMaker.cc:216] insert rawgbt: f8d22a09e57ec88fa75c99ccd29367751aa6f041e99378732324132105f46289, txs: 41541
+I0408 14:29:41.458425  8893 BlockMaker.cc:509] received SolvedShare message, len: 264
+E0408 14:29:41.458503  8893 BlockMaker.cc:543] find gbthash in jobId2GbtHash_ =========== hash : : fd1f09df8c854478f443777719c0e8ca3754b52849990cc241e60a3c0544b967
+I0408 14:29:41.463380  8893 BlockMaker.cc:576] submit block: 000000000000005fd9a80b3803c23178c6fe761d48dd393d4ee1d2ec415f9682
+I0408 14:29:41.700448  3197 BlockMaker.cc:663] submit block to: http://127.0.0.1:18332
+E0408 14:29:46.703111  3197 Utils.cc:221] unable to request data from: http://127.0.0.1:18332, error: Timeout was reached
+E0408 14:29:46.703248  3197 BlockMaker.cc:678] rpc call fail:
+I0408 14:29:50.013048  3197 BlockMaker.cc:673] rpc call success, submit block response: {"result":"duplicate","error":null,"id":"1"}
