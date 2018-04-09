@@ -1,13 +1,13 @@
 ### Step:
-
+	
 1. stop mining: supervisorctl stop all
 2. Run bitcoin client: `./bitcoind -testnet -datadir=/root/.bitcoin-abc -blockmaxsize=16000000`
 3. Run create transaction script
 4. Run gbtcmd.sh script at the same time to output CreateNewBlock log
-
+	
 ### Problem:
 1. bitcoin-cli getblocktemplate command will encounter error when gbtcmd.sh script running:
-
+	
 	```
 	error code: -1
 	error message:
@@ -20,435 +20,438 @@
 	E0408 15:51:44.480285  6895 GbtMaker.cc:201] get rawgbt failure
 	E0408 15:51:46.054837  6895 Utils.cc:227] server responded with code: 501
 	```
-
+	
 3. gbtcmd.sh script log:
-
+	
 	```
 	2018-04-08 07:37:26 CreateNewBlock(): total size: 672649 txs: 3502 fees: 707669 sigops 3605
 	2018-04-08 07:37:36 CreateNewBlock(): total size: 1453000 txs: 7577 fees: 1522803 sigops 7680
-2018-04-08 07:37:47 CreateNewBlock(): total size: 2220105 txs: 11583 fees: 2324123 sigops 11686
-2018-04-08 07:37:58 CreateNewBlock(): total size: 2731997 txs: 14256 fees: 2858813 sigops 14359
-2018-04-08 07:38:09 CreateNewBlock(): total size: 3438796 txs: 17947 fees: 3597140 sigops 18050
-2018-04-08 07:38:21 CreateNewBlock(): total size: 4157687 txs: 21701 fees: 4348049 sigops 21804
-2018-04-08 07:38:33 CreateNewBlock(): total size: 4655386 txs: 24300 fees: 4867916 sigops 24403
-2018-04-08 07:38:46 CreateNewBlock(): total size: 5345094 txs: 27902 fees: 5588402 sigops 28005
-2018-04-08 07:38:58 CreateNewBlock(): total size: 5646693 txs: 29477 fees: 5903448 sigops 29580
-2018-04-08 07:39:11 CreateNewBlock(): total size: 6002312 txs: 31334 fees: 6274886 sigops 31437
-2018-04-08 07:39:25 CreateNewBlock(): total size: 6508435 txs: 33977 fees: 6803548 sigops 34080
-2018-04-08 07:39:39 CreateNewBlock(): total size: 6756394 txs: 35271 fees: 7067793 sigops 35376
-2018-04-08 07:39:53 CreateNewBlock(): total size: 7387773 txs: 38568 fees: 7727268 sigops 38673
-2018-04-08 07:40:07 CreateNewBlock(): total size: 7867919 txs: 41075 fees: 8230783 sigops 41181
-2018-04-08 07:40:21 CreateNewBlock(): total size: 8222538 txs: 42927 fees: 8601217 sigops 43033
-2018-04-08 07:40:32 CreateNewBlock(): total size: 8692665 txs: 45382 fees: 9092261 sigops 45488
-2018-04-08 07:40:42 CreateNewBlock(): total size: 9065510 txs: 47329 fees: 9481708 sigops 47435
-2018-04-08 07:40:53 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:41:03 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:41:14 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:41:25 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:41:35 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:41:46 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:41:56 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:42:07 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:42:18 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:42:28 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:42:39 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:42:56 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:42:57 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:42:59 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:01 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:03 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:04 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:06 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:08 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:10 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:12 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:13 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:15 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:17 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:18 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:20 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:21 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:23 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:25 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:26 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:28 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:29 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:31 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:33 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:34 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:36 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:37 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:39 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:40 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:42 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:44 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:45 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:47 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:48 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:50 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:52 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:53 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:55 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
-2018-04-08 07:43:56 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:43:58 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:00 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:01 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:02 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:03 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:05 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:07 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:08 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:10 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:11 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:13 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:15 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:16 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:18 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:19 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:21 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:22 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:24 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:26 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:27 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:29 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:31 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:32 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:34 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:36 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:37 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:39 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:40 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:42 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:44 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:45 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:47 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:49 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:50 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:52 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:53 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:55 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
-2018-04-08 07:44:56 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:44:58 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:00 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:01 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:03 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:04 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:06 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:08 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:09 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:11 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:12 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:14 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:16 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:17 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:19 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:20 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:22 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:24 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:25 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:27 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:28 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:30 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:32 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:34 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:35 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:37 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:38 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:40 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:42 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:42 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:43 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:45 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:46 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:48 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:50 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:51 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:53 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:54 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:56 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:58 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:45:59 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:01 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:03 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:04 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:06 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:07 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:09 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:10 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:12 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:14 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:15 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:17 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:19 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:20 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:22 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:23 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:25 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:26 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:28 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:30 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:31 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:33 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:35 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:36 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:38 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:39 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:41 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:43 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:44 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:46 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:47 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:49 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:51 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:52 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:54 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:55 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:57 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:46:59 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:00 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:02 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:03 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:05 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:06 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:08 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:10 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:11 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:13 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:14 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:16 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:18 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:19 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:21 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:23 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:24 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:26 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:27 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:29 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:31 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:32 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:34 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:35 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:37 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:38 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:40 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:42 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:43 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:45 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:46 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:48 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:49 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:51 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:53 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:54 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:56 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:57 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:47:59 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:01 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:02 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:04 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:06 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:07 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:09 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:10 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:12 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:14 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:15 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:17 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:18 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:20 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:22 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:23 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:25 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:26 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:28 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:30 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:31 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:33 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:34 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:36 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:37 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:39 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:41 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:42 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:44 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:45 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:47 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:49 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:50 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:52 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:53 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:55 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:56 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:48:58 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:00 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:01 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:03 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:04 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:06 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:08 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:09 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:11 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:12 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:14 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:15 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:17 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:19 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
-2018-04-08 07:49:20 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:22 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:24 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:25 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:27 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:29 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:30 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:32 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:34 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:35 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:37 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:38 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:40 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:41 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:43 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:45 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:46 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:48 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:49 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:51 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:53 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:54 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:56 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:57 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:49:59 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:01 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:02 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:04 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:06 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:07 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:09 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:10 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:12 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:14 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:15 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:17 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:18 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:20 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:22 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:23 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:25 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:26 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:28 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:30 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:31 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:33 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:34 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:36 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:37 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:39 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:41 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:42 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:44 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:45 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:47 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:49 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:50 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:52 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:53 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:55 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:57 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:50:58 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:00 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:01 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:03 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:04 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:06 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:08 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:09 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:11 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:12 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:14 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:15 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:17 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:19 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:20 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:22 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:23 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:25 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:27 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:28 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:30 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
-2018-04-08 07:51:31 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:33 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:34 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:36 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:38 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:39 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:41 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:42 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:44 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:45 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:47 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:49 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:50 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:52 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:53 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:55 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:57 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:51:58 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:00 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:01 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:03 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:04 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:06 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:08 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:09 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:11 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:12 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:14 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:16 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:17 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:19 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:20 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:22 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:24 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:25 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:27 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:28 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:30 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:31 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:33 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:35 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:36 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:38 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:39 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:41 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:43 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:44 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:46 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:47 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:49 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:50 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:52 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:54 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:55 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:57 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:52:58 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:53:00 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:53:02 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:53:03 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:53:05 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:53:06 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-2018-04-08 07:53:08 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
-	```
-	
+	2018-04-08 07:37:47 CreateNewBlock(): total size: 2220105 txs: 11583 fees: 2324123 sigops 11686
+	2018-04-08 07:37:58 CreateNewBlock(): total size: 2731997 txs: 14256 fees: 2858813 sigops 14359
+	2018-04-08 07:38:09 CreateNewBlock(): total size: 3438796 txs: 17947 fees: 3597140 sigops 18050
+	2018-04-08 07:38:21 CreateNewBlock(): total size: 4157687 txs: 21701 fees: 4348049 sigops 21804
+	2018-04-08 07:38:33 CreateNewBlock(): total size: 4655386 txs: 24300 fees: 4867916 sigops 24403
+	2018-04-08 07:38:46 CreateNewBlock(): total size: 5345094 txs: 27902 fees: 5588402 sigops 28005
+	2018-04-08 07:38:58 CreateNewBlock(): total size: 5646693 txs: 29477 fees: 5903448 sigops 29580
+	2018-04-08 07:39:11 CreateNewBlock(): total size: 6002312 txs: 31334 fees: 6274886 sigops 31437
+	2018-04-08 07:39:25 CreateNewBlock(): total size: 6508435 txs: 33977 fees: 6803548 sigops 34080
+	2018-04-08 07:39:39 CreateNewBlock(): total size: 6756394 txs: 35271 fees: 7067793 sigops 35376
+	2018-04-08 07:39:53 CreateNewBlock(): total size: 7387773 txs: 38568 fees: 7727268 sigops 38673
+	2018-04-08 07:40:07 CreateNewBlock(): total size: 7867919 txs: 41075 fees: 8230783 sigops 41181
+	2018-04-08 07:40:21 CreateNewBlock(): total size: 8222538 txs: 42927 fees: 8601217 sigops 43033
+	2018-04-08 07:40:32 CreateNewBlock(): total size: 8692665 txs: 45382 fees: 9092261 sigops 45488
+	2018-04-08 07:40:42 CreateNewBlock(): total size: 9065510 txs: 47329 fees: 9481708 sigops 47435
+	2018-04-08 07:40:53 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:41:03 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:41:14 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:41:25 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:41:35 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:41:46 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:41:56 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:42:07 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:42:18 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:42:28 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:42:39 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:42:56 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:42:57 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:42:59 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:01 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:03 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:04 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:06 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:08 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:10 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:12 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:13 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:15 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:17 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:18 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:20 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:21 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:23 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:25 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:26 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:28 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:29 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:31 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:33 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:34 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:36 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:37 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:39 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:40 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:42 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:44 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:45 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:47 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:48 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:50 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:52 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:53 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:55 CreateNewBlock(): total size: 9238407 txs: 48232 fees: 9662328 sigops 48338
+	2018-04-08 07:43:56 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:43:58 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:00 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:01 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:02 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:03 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:05 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:07 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:08 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:10 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:11 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:13 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:15 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:16 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:18 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:19 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:21 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:22 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:24 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:26 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:27 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:29 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:31 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:32 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:34 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:36 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:37 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:39 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:40 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:42 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:44 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:45 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:47 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:49 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:50 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:52 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:53 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:55 CreateNewBlock(): total size: 9238778 txs: 48233 fees: 9667938 sigops 48341
+	2018-04-08 07:44:56 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:44:58 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:00 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:01 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:03 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:04 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:06 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:08 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:09 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:11 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:12 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:14 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:16 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:17 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:19 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:20 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:22 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:24 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:25 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:27 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:28 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:30 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:32 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:34 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:35 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:37 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:38 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:40 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:42 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:42 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:43 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:45 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:46 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:48 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:50 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:51 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:53 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:54 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:56 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:58 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:45:59 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:01 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:03 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:04 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:06 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:07 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:09 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:10 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:12 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:14 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:15 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:17 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:19 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:20 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:22 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:23 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:25 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:26 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:28 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:30 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:31 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:33 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:35 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:36 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:38 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:39 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:41 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:43 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:44 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:46 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:47 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:49 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:51 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:52 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:54 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:55 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:57 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:46:59 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:00 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:02 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:03 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:05 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:06 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:08 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:10 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:11 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:13 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:14 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:16 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:18 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:19 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:21 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:23 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:24 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:26 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:27 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:29 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:31 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:32 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:34 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:35 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:37 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:38 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:40 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:42 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:43 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:45 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:46 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:48 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:49 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:51 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:53 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:54 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:56 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:57 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:47:59 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:01 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:02 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:04 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:06 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:07 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:09 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:10 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:12 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:14 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:15 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:17 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:18 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:20 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:22 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:23 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:25 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:26 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:28 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:30 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:31 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:33 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:34 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:36 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:37 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:39 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:41 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:42 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:44 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:45 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:47 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:49 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:50 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:52 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:53 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:55 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:56 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:48:58 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:00 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:01 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:03 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:04 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:06 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:08 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:09 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:11 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:12 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:14 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:15 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:17 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:19 CreateNewBlock(): total size: 9239145 txs: 48234 fees: 9673548 sigops 48344
+	2018-04-08 07:49:20 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:22 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:24 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:25 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:27 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:29 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:30 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:32 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:34 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:35 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:37 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:38 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:40 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:41 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:43 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:45 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:46 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:48 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:49 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:51 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:53 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:54 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:56 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:57 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:49:59 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:01 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:02 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:04 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:06 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:07 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:09 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:10 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:12 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:14 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:15 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:17 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:18 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:20 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:22 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:23 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:25 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:26 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:28 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:30 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:31 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:33 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:34 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:36 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:37 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:39 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:41 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:42 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:44 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:45 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:47 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:49 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:50 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:52 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:53 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:55 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:57 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:50:58 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:00 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:01 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:03 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:04 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:06 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:08 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:09 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:11 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:12 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:14 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:15 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:17 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:19 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:20 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:22 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:23 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:25 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:27 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:28 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:30 CreateNewBlock(): total size: 9239371 txs: 48235 fees: 9683548 sigops 48346
+	2018-04-08 07:51:31 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:33 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:34 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:36 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:38 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:39 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:41 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:42 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:44 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:45 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:47 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:49 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:50 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:52 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:53 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:55 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:57 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:51:58 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:00 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:01 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:03 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:04 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:06 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:08 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:09 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:11 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:12 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:14 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:16 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:17 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:19 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:20 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:22 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:24 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:25 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:27 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:28 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:30 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:31 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:33 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:35 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:36 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:38 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:39 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:41 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:43 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:44 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:46 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:47 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:49 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:50 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:52 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:54 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:55 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:57 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:52:58 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:53:00 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:53:02 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:53:03 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:53:05 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:53:06 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+	2018-04-08 07:53:08 CreateNewBlock(): total size: 9239596 txs: 48236 fees: 9683784 sigops 48348
+		```
+		
 ### Solution：assume HF has successed
+
 ```
 bool IsMonolithEnabled(const Config &config, const CBlockIndex *pindexPrev) {
 	  return true;
     if (pindexPrev == nullptr) {
         return false;
     }
-
+	
     return IsMonolithEnabled(config, pindexPrev->GetMedianTimePast());
 }
 ```
+	
+	
 
 
